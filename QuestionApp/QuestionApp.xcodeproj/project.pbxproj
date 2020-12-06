@@ -17,6 +17,8 @@
 		3FA32453257CBE34000B012B /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FA32452257CBE34000B012B /* maruSound.mp3 */; };
 		3FA32456257CBE3B000B012B /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FA32455257CBE3B000B012B /* sound.mp3 */; };
 		3FA3245E257CC005000B012B /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3245D257CC005000B012B /* NextViewController.swift */; };
+		3FA32461257CCC16000B012B /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32460257CCC16000B012B /* ImagesModel.swift */; };
+		3FA32464257CCD72000B012B /* ImagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA32463257CCD72000B012B /* ImagesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3FA32452257CBE34000B012B /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		3FA32455257CBE3B000B012B /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		3FA3245D257CC005000B012B /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		3FA32460257CCC16000B012B /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
+		3FA32463257CCD72000B012B /* ImagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		3FA32459257CBEE7000B012B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3FA32460257CCC16000B012B /* ImagesModel.swift */,
+				3FA32463257CCD72000B012B /* ImagesList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,9 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA3243D257CBBF6000B012B /* ViewController.swift in Sources */,
+				3FA32464257CCD72000B012B /* ImagesList.swift in Sources */,
 				3FA3245E257CC005000B012B /* NextViewController.swift in Sources */,
 				3FA32439257CBBF6000B012B /* AppDelegate.swift in Sources */,
 				3FA3243B257CBBF6000B012B /* SceneDelegate.swift in Sources */,
+				3FA32461257CCC16000B012B /* ImagesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
