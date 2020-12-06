@@ -25,11 +25,18 @@ class NextViewController: UIViewController {
     }
 
     @IBAction func okAction(_ sender: Any) {
-        //入力された値を取得
         
-        //デリゲートメソッドの引数に入れる
+        //入力された値を取得
+        let latitudeValue = latitudeTextField.text!
+        let longitudeValue = longitudeTextField.text!
         
         //両方のTextFieldがからでなければ戻る
+        if latitudeTextField.text != nil || longitudeTextField.text != nil{
+            //デリゲートメソッドの引数に入れる
+            delegate?.seachLacation(latitudeValue: latitudeValue, longitudeValue: longitudeValue)
+            dismiss(animated: true, completion: nil)
+        }
+        
     }
     
 }

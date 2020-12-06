@@ -9,8 +9,8 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecognizerDelegate {
-    
+class ViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecognizerDelegate,SearchLocationDelegate {
+
     @IBOutlet var longPress: UILongPressGestureRecognizer!
     @IBOutlet var mapView: MKMapView!
     var locManager:CLLocationManager!
@@ -93,11 +93,43 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecogn
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "next"{
             
-            let nextVC = segue.destination as! NextViewController
             
+            let nextVC = segue.destination as! NextViewController
+            nextVC.delegate = self
             
         }
     }
+    
+    //委任されたデリゲートメソッド
+    func seachLacation(latitudeValue: String, longitudeValue: String) {
+        
+        if latitudeValue.isEmpty != true || longitudeValue.isEmpty != true{
+            
+            let latitudeString = latitudeValue
+            let longitudeString = longitudeValue
+            
+            //緯度経度からコーディネート
+            
+            
+            //表示される範囲を指定
+            
+            
+            //領域を指定
+            
+            
+            //領域をMapViewに設定する
+            
+            
+            //緯度経度から住所へ変換する
+            
+            
+            //ラベルに表示
+            
+        }
+    
+    }
+    
+    
     
     
     
