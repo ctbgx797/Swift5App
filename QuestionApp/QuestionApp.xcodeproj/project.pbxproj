@@ -13,6 +13,9 @@
 		3FA32440257CBBF6000B012B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3243E257CBBF6000B012B /* Main.storyboard */; };
 		3FA32442257CBBF9000B012B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA32441257CBBF9000B012B /* Assets.xcassets */; };
 		3FA32445257CBBF9000B012B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA32443257CBBF9000B012B /* LaunchScreen.storyboard */; };
+		3FA32450257CBE2C000B012B /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3244F257CBE2C000B012B /* batsuSound.mp3 */; };
+		3FA32453257CBE34000B012B /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FA32452257CBE34000B012B /* maruSound.mp3 */; };
+		3FA32456257CBE3B000B012B /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FA32455257CBE3B000B012B /* sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3FA32441257CBBF9000B012B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA32444257CBBF9000B012B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA32446257CBBF9000B012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA3244F257CBE2C000B012B /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batsuSound.mp3; sourceTree = "<group>"; };
+		3FA32452257CBE34000B012B /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
+		3FA32455257CBE3B000B012B /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		3FA32437257CBBF6000B012B /* QuestionApp */ = {
 			isa = PBXGroup;
 			children = (
-				3FA32438257CBBF6000B012B /* AppDelegate.swift */,
-				3FA3243A257CBBF6000B012B /* SceneDelegate.swift */,
-				3FA3243C257CBBF6000B012B /* ViewController.swift */,
-				3FA3243E257CBBF6000B012B /* Main.storyboard */,
-				3FA32441257CBBF9000B012B /* Assets.xcassets */,
+				3FA32459257CBEE7000B012B /* Model */,
+				3FA3245A257CBEEF000B012B /* View */,
+				3FA3245B257CBEF7000B012B /* Controller */,
 				3FA32443257CBBF9000B012B /* LaunchScreen.storyboard */,
+				3FA32455257CBE3B000B012B /* sound.mp3 */,
+				3FA32452257CBE34000B012B /* maruSound.mp3 */,
+				3FA3244F257CBE2C000B012B /* batsuSound.mp3 */,
 				3FA32446257CBBF9000B012B /* Info.plist */,
 			);
 			path = QuestionApp;
+			sourceTree = "<group>";
+		};
+		3FA32459257CBEE7000B012B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FA3245A257CBEEF000B012B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3243E257CBBF6000B012B /* Main.storyboard */,
+				3FA32441257CBBF9000B012B /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FA3245B257CBEF7000B012B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FA32438257CBBF6000B012B /* AppDelegate.swift */,
+				3FA3243A257CBBF6000B012B /* SceneDelegate.swift */,
+				3FA3243C257CBBF6000B012B /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +157,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA32450257CBE2C000B012B /* batsuSound.mp3 in Resources */,
+				3FA32453257CBE34000B012B /* maruSound.mp3 in Resources */,
 				3FA32445257CBBF9000B012B /* LaunchScreen.storyboard in Resources */,
 				3FA32442257CBBF9000B012B /* Assets.xcassets in Resources */,
+				3FA32456257CBE3B000B012B /* sound.mp3 in Resources */,
 				3FA32440257CBBF6000B012B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JV44W558S;
 				INFOPLIST_FILE = QuestionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yoshiki.QuestionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JV44W558S;
 				INFOPLIST_FILE = QuestionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yoshiki.QuestionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
