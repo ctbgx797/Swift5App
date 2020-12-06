@@ -7,26 +7,29 @@
 
 import UIKit
 
+protocol SearchLocationDelegate {
+    func seachLacation(latitudeValue:String,longitudeValue:String)
+}
+
 class NextViewController: UIViewController {
 
     @IBOutlet var latitudeTextField: UITextField!  //緯度
     @IBOutlet var longitudeTextField: UITextField! //経度
+    
+    var delegate:SearchLocationDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func okAction(_ sender: Any) {
+        //入力された値を取得
+        
+        //デリゲートメソッドの引数に入れる
+        
+        //両方のTextFieldがからでなければ戻る
     }
-    */
-
+    
 }
