@@ -54,11 +54,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Zf4-JD-MAJ">
-                    <connections>
-                        <action selector="longPressTap:" destination="BYZ-38-t0r" id="v9k-Ch-AFl"/>
-                    </connections>
-                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Zf4-JD-MAJ"/>
             </objects>
             <point key="canvasLocation" x="439" y="88"/>
         </scene>

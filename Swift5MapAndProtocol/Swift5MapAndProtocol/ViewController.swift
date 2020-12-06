@@ -43,11 +43,36 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecogn
             //緯度経度から住所に変換する
 
         }
-        
-        
-        
+    }
     
+    func convert(lat:CLLocationDegrees,long:CLLocationDegrees){
+        
+        let geoCoder = CLGeocoder()
+        let location = CLLocation(latitude: lat, longitude: long)
+        
+        //クロージャー
+        geoCoder.reverseGeocodeLocation(location){
+            (placeMark,error) in
+            
+            if let placeMark = placeMark{
+                
+                if let pm = placeMark.first{
+                    
+                    if pm.administrativeArea != nil || pm.locality != nil{
+                        
+                        self.addressString = pm.name! + pm.administrativeArea! + pm.locality!
     
+                    }else{
+                        
+                        self.addressString = pm.name!
+                    }
+                    
+                }
+                
+                
+            }
+        }
+        
     }
     
 
