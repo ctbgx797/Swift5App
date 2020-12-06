@@ -9,6 +9,9 @@ import UIKit
 
 class NextViewController: UIViewController {
 
+    @IBOutlet var latitudeTextField: UITextField!  //緯度
+    @IBOutlet var longitudeTextField: UITextField! //経度
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
