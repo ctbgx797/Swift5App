@@ -109,22 +109,25 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UIGestureRecogn
             let longitudeString = longitudeValue
             
             //緯度経度からコーディネート
-            
+            let coordinate = CLLocationCoordinate2DMake(Double(latitudeValue)!,Double(longitudeValue)!)
             
             //表示される範囲を指定
-            
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
             
             //領域を指定
-            
+            let reagion = MKCoordinateRegion(center: coordinate, span: span)
             
             //領域をMapViewに設定する
-            
+            mapView.setRegion(reagion, animated: true)
             
             //緯度経度から住所へ変換する
-            
+            convert(lat:Double(latitudeValue)!, long: Double(longitudeValue)!)
             
             //ラベルに表示
+            self.addressLabel.text = addressString
             
+        }else{
+            self.addressLabel.text = "表示できません"
         }
     
     }
