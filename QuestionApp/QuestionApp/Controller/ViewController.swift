@@ -100,7 +100,18 @@ class ViewController: UIViewController {
         
     }
     
+    //175から動画見て
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "next"{
+            
+            let  nextVC = segue.destination as! NextViewController
+            
+            nextVC.correctedCount = correctCount
+            nextVC.wrongCount = wrongCount
+            
+            
+        }
         
     }
     

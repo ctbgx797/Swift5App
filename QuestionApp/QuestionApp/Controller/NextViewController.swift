@@ -9,8 +9,18 @@ import UIKit
 
 class NextViewController: UIViewController {
 
+    @IBOutlet var correctLabel: UILabel!
+    @IBOutlet var wrongLabel: UILabel!
+    
+    var correctedCount = Int()
+    var wrongCount = Int()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        correctLabel.text = String(correctedCount)
+        wrongLabel.text = String(wrongCount)
 
         // Do any additional setup after loading the view.
     }
