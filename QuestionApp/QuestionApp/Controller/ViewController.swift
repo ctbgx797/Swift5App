@@ -24,7 +24,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +38,12 @@ class ViewController: UIViewController {
         
         imageView.image = UIImage(named: imagesList.list[0].imageText)
         
+        
+        if UserDefaults.standard.object(forKey: "beforeCount") != nil{
+            maxScore = UserDefaults.standard.object(forKey: "beforeCount") as! Int
+        }
+        
+        maxScoreLabel.text = String(maxScore)
     }
     
     
@@ -100,7 +108,6 @@ class ViewController: UIViewController {
         
     }
     
-    //175から動画見て
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "next"{
