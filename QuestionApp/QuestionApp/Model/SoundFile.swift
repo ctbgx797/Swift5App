@@ -10,15 +10,15 @@ import AVFoundation
 
 
 class SoundFile{
-    var player:AVAudioPlayer?
     
+    var player:AVAudioPlayer?
     func playSound(filename:String,extensionName:String){
         
         //再生する
         let soundURL = Bundle.main.url(forResource: filename, withExtension: extensionName)
         
         do {
-             //効果音を鳴らす
+            //効果音を鳴らす
             player = try AVAudioPlayer(contentsOf:soundURL!)
             player?.play()
             

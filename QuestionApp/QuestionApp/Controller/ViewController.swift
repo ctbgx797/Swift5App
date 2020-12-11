@@ -23,6 +23,8 @@ class ViewController: UIViewController,NowScoreDelegate {
     //IBActionで検知した正答がどちらなのかを取得する
     var pickedAnswer = false
     
+    var soundFile = SoundFile()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,6 +52,7 @@ class ViewController: UIViewController,NowScoreDelegate {
         
         if (sender as AnyObject).tag == 1{
             
+            soundFile.playSound(filename: "maruSound", extensionName: "mp3")
             //○ボタンが押されたとき
             pickedAnswer = true
             
@@ -60,6 +63,8 @@ class ViewController: UIViewController,NowScoreDelegate {
             
         }else if (sender as AnyObject).tag == 2{
             
+            soundFile.playSound(filename: "batsuSound", extensionName: "mp3")
+
             //✕ボタンが押されたとき
             pickedAnswer = false
             
