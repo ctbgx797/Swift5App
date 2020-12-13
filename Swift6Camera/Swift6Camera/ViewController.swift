@@ -40,6 +40,11 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func share(_ sender: Any) {
         
+        let text = "#サービス名"
+        let image = backImageView.image?.jpegData(compressionQuality: 0.5)
+        let item = [text,image as Any]
+        let activityVC = UIActivityViewController(activityItems: item, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
         
     }
     
