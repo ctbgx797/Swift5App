@@ -21,12 +21,18 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     @IBAction func camera(_ sender: Any) {
         
+        let souceType:UIImagePickerController.SourceType = .camera
+        createImagePicker(souceType: souceType)
         
     }
     
     
     
     @IBAction func album(_ sender: Any) {
+        
+        let souceType:UIImagePickerController.SourceType = .photoLibrary
+        createImagePicker(souceType: souceType)
+        
     }
     
     
