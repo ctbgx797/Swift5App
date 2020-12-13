@@ -13,7 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func camera(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func album(_ sender: Any) {
+    }
+    
+    
+    Ò
+    @IBAction func share(_ sender: Any) {
+    }
 }
 
