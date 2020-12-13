@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     
-    Ò
+
     @IBAction func share(_ sender: Any) {
     }
 }

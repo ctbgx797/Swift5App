@@ -13,6 +13,7 @@
 		3FE2CE4B25862696003B6827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2CE4925862696003B6827 /* Main.storyboard */; };
 		3FE2CE4D25862699003B6827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2CE4C25862699003B6827 /* Assets.xcassets */; };
 		3FE2CE5025862699003B6827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2CE4E25862699003B6827 /* LaunchScreen.storyboard */; };
+		3FE2CE5F2586297D003B6827 /* CheckPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2CE5E2586297D003B6827 /* CheckPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3FE2CE4C25862699003B6827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FE2CE4F25862699003B6827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FE2CE5125862699003B6827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE2CE5E2586297D003B6827 /* CheckPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPermission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3FE2CE4325862696003B6827 /* AppDelegate.swift */,
 				3FE2CE4525862696003B6827 /* SceneDelegate.swift */,
 				3FE2CE4725862696003B6827 /* ViewController.swift */,
+				3FE2CE5E2586297D003B6827 /* CheckPermission.swift */,
 				3FE2CE4925862696003B6827 /* Main.storyboard */,
 				3FE2CE4C25862699003B6827 /* Assets.xcassets */,
 				3FE2CE4E25862699003B6827 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				3FE2CE4825862696003B6827 /* ViewController.swift in Sources */,
 				3FE2CE4425862696003B6827 /* AppDelegate.swift in Sources */,
 				3FE2CE4625862696003B6827 /* SceneDelegate.swift in Sources */,
+				3FE2CE5F2586297D003B6827 /* CheckPermission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
