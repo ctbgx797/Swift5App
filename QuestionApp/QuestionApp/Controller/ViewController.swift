@@ -88,7 +88,6 @@ class ViewController: UIViewController,NowScoreDelegate {
             print("正解")
             correctCount = correctCount + 1
         }else{
-            
             print("不正解")
             wrongCount = wrongCount + 1
         }
