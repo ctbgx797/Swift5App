@@ -6,12 +6,13 @@
 //
 
 import UIKit
-import  Photos
+import Photos
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
     var  checkPermission = CheckPermission()
     
+    @IBOutlet var backImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     
     @IBAction func share(_ sender: Any) {
+        
+        
     }
     
     func createImagePicker(souceType:UIImagePickerController.SourceType){
@@ -55,5 +58,18 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         
     }
     
+    //撮影がキャンセルされたとき
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickerImage = info[.editedImage] as? UIImage{
+            backImageView.image = pickerImage
+            
+            //閉じる処理
+            picker.dismiss(animated: true, completion: nil)
+        }
+    }
 }
 
