@@ -1,0 +1,6 @@
+framework module Pods_Swift5introApp {
+  umbrella header "Pods-Swift5introApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
